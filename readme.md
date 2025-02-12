@@ -16,7 +16,6 @@ Para hacer que git controle solo un archivo
 `````shell
 git <nombrearchivo>
 `````
-`````
 Para hacer que git controle todos los archivos
 `````shell
 git add .
