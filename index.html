@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajar por el mundo</title>
+</head>
+<body>
+    <form id="form-submit" action="procesar.php">
+        <div>
+            <label for="intro-pais">Introduce un pais</label>
+            <input id="intro-pais" type="text">
+        </div>
+        <button id="btn-submit" type="submit">Enviar</button>
+        <div id="display"></div>
+    </form>
+    <script>
+        const introPais = document.getElementById('intro-pais');
+        const formSubmit = document.getElementById('form-submit');
+
+        formSubmit.addEventListener('submit', function(e){
+            e.preventDefault();
+            let pais = introPais.value;
+            if(pais){
+                document.getElementById('display').innerHTML = `Esta usted en ${pais}`;
+            }else{
+                document.getElementById('display').innerHTML = 'Es usted un soso';
+            }
+        });
+    </script>
+</body>
+</html>
