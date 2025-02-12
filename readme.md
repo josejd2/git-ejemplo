@@ -14,7 +14,8 @@ git init
 `````
 Para hacer que git controle solo un archivo
 `````shell
-git add readme.md
+git add .
+git <nombrearchivo>
 `````
 Para saber el estado de git 
 `````shell
@@ -28,4 +29,20 @@ Para ver los commits que tenemos
 `````shell
 git log
 git log --graph 
+`````
+Para listar las ramas
+`````shell
+git branch 
+`````
+Para crear una rama
+`````shell
+git branch <nombredelarama>
+`````
+Para cambiar de rama
+`````shell
+git checkout <nombredelarama>
+`````
+Para fusionar lo que tengas a rama master
+`````shell
+git merge <nombredelarama>
 `````
