@@ -1,0 +1,23 @@
+{
+  "name": "git-ejemplo",
+  "version": "1.0.0",
+  "description": "La primera vez que utilizamos git en una máquina debemos configurar el user y el email y comprobarlo.\r ````shell\r git config --global user.name 'nombreusuario' => (si hay espacios hay que poner comillas).\r git config --global user.email 'direccion de correo'\r ````\r Para comprobar configuración.\r `````shell\r git config --list  \r `````\r Para iniciar el repositorio por primera vez\r `````shell\r git init  \r `````\r Para hacer que git controle solo un archivo\r `````shell\r git <nombrearchivo>\r `````\r Para hacer que git controle todos los archivos\r `````shell\r git add .\r `````\r Para saber el estado de git \r `````shell\r git status  \r `````\r Para confirmar el commit\r `````shell\r git commit -m 'nombrecommit' \r `````\r Para ver los commits que tenemos\r `````shell\r git log\r git log --graph \r `````\r Para listar las ramas\r `````shell\r git branch \r `````\r Para crear una rama\r `````shell\r git branch <nombredelarama>\r `````\r Para cambiar de rama\r `````shell\r git checkout <nombredelarama>\r `````\r Para fusionar lo que tengas a rama master\r `````shell\r git merge <nombredelarama>\r `````",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josejd2/git-ejemplo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josejd2/git-ejemplo/issues"
+  },
+  "homepage": "https://github.com/josejd2/git-ejemplo#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
