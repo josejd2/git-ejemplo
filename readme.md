@@ -24,3 +24,8 @@ Para confirmar el commit
 `````shell
 git commit -m 'nombrecommit' 
 `````
+Para ver los commits que tenemos
+`````shell
+git log
+git log --graph 
+`````
