@@ -14,8 +14,12 @@ git init
 `````
 Para hacer que git controle solo un archivo
 `````shell
-git add .
 git <nombrearchivo>
+`````
+`````
+Para hacer que git controle todos los archivos
+`````shell
+git add .
 `````
 Para saber el estado de git 
 `````shell
